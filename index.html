@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Fugaz One' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/82109a0ba4.js" crossorigin="anonymous"></script>
+    <title>GreenForceInitiatives</title>
+    <style>
+        /* CSS styles for the website */
+        body {
+            font-family: 'Fugaz One';
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #1A5D1A;
+            color: #fff;
+            padding: 20px;
+        }
+        
+        #nav {
+    width:100%;
+    display:block;
+    background-color:#1A5D1A;
+    border-bottom:5px solid #1A5D1A;
+    }
+#nav ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+    }
+#nav ul:After {
+    content: "";
+    display:block;
+    clear:both;
+    }     
+#nav ul li {
+    display:list-item;
+    list-style: none;
+    float:left;
+    background-color:#1A5D1A;
+    }
+ #nav ul li i {
+     font-size:25px;
+     width:30px;
+     } 
+#nav ul li a {
+    display:block;
+    padding:15px 30px;  
+    color:#FFF;
+    font-size:20px;
+    text-decoration:none;
+    font-family: 'Bree Serif', 'serif';
+    text-align:center;
+}
+
+/* The Dropdown Styles */
+/* =================== */
+/* Hide Dropdowns by Default */
+#nav ul ul {
+    display: none;
+    position: absolute; top: 79px;
+}
+/* Display Dropdowns on Hover */
+#nav ul li:hover > ul {
+    display:list-item;
+}
+/* Fisrt Tier Dropdown */
+#nav ul ul li {
+    width:200px;
+    float:none;
+    position: relative;
+    border-bottom:none;
+}
+#nav ul ul li i {
+    margin-right:10px;
+    }
+#nav ul ul li a {
+    padding:15px 20px;
+    text-align:left;
+    }
+/* Second, Third and more Tiers */
+nav ul ul ul li {
+    position: absolute relative;
+    top:-79px;
+    left:200px;
+}
+
+#nav li > a:after { content: ' »'; }
+#nav > li > a:after {content: ' »'; }
+#nav li > a:only-child:after {content: ''; }
+
+#nav ul .active {
+    color:#1A5D1A;
+}
+        
+        .intro-section {
+            background-color: #f2f2f2;
+            
+            padding: 50px;
+            background-image: url("./hd-blue-sky-wallpaper-full-hd-picture-mvehfqz6w2ges2dj.jpg");
+            
+        }
+        
+        .intro-section h1 {
+            font-size: 36px;
+            color: #1A5D1A;
+        }
+        
+        .intro-section p {
+            font-size: 18px;
+            color: #666;
+        }
+        
+        .video-section {
+          background-color:#1A5D1A; 
+          color:#fff; 
+          padding-top :20px; 
+          padding-bottom :20px; 
+          text-align:center; 
+          margin-top :30px; 
+          margin-bottom :30px; 
+          
+      }
+
+      .video-section h2{
+          font-size :24px; 
+          margin-bottom :10px;
+
+      }
+
+      .video-section p{
+          font-size :16px;
+
+      }
+
+      .video-section a{
+         display:inline-block;  
+         background-color:#ff0000; 
+         color:#fff; 
+         padding:10px 20px; 
+         text-decoration:none; 
+         margin-top :10px;
+      }
+
+      .footer {
+            background-color: #1A5D1A;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+  
+    <nav id="nav">
+        <ul>
+          <li><a href="#"><i class="fa fa-home fa-2x"></i><Br/>Home</a></li>
+          
+        
+          <li><a href="#"><i class="fa fa-user fa-2x"></i><Br/>About us</a></li>
+          <li><a href="#"><i class="fa fa-book fa-2x"></i><Br/>Our Progress</a>
+            <ul>
+              
+              <li><a href="#"><i class="fa-brands fa-blogger-b"></i>Blogs</a></li>
+              
+              </li>
+           </ul>
+          
+          <li><a href="#"><i class="fa-solid fa-leaf"></i></i><Br/>About EcoInsight</a></li>
+          <li><a href="#"><i class="fa-solid fa-registered"></i></i><Br/>Register Now</a></li>
+          <li><a href="#"><i class="fa fa-envelope fa-2x"></i><Br/>Contact</a>
+              <ul>
+                 <li><a href="#"><i class="fa-brands fa-instagram"></i></i>Instagram</a></li>
+                 <li><a href="#"><i class="fa fa-twitter fa-1x"></i>Twitter</a></li>
+              </ul>
+            </li>
+          </ul>
+      </nav>
+
+    <section class="intro-section">
+        <h1>Introducing you to EcoInsight</h1>
+        <p>An innovative idea for monitoring environmental damage caused by you!</p>
+    
+        <button onclick="window.location.href='#about-ecoinsight'">Learn More</button> 
+    </section>
+
+    <section class="video-section">
+        <h2>Latest Video:</h2>
+        <p>Check out our latest video on YouTube!</p>
+       
+        <a href="https://www.youtube.com/channel/UCsobf55H4GT1FCNEN8arzGg" target="_blank">Watch Now</a> 
+    </section>
+
+    <!-- FAQ and Support buttons section -->
+    <!-- Add your FAQ and Support buttons here -->
+
+    <!-- Copyright section -->
+    <footer class="footer">
+        &copy; 2024 GreenForceInitiatives. All rights reserved.
+    </footer>
+</body>
+</html>
